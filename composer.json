@@ -1,6 +1,5 @@
 {
     "name": "iambod/oauth2-authsch",
-    "type": "symfony-bundle",
     "description": "Integration with iambod/oauth2-client to provide services",
     "license": "MIT",
     "authors": [
