@@ -1,6 +1,7 @@
 {
     "name": "iambod/oauth2-authsch",
-    "description": "A short description of what your package does",
+    "type": "symfony-bundle",
+    "description": "Integration with iambod/oauth2-client to provide services",
     "license": "MIT",
     "authors": [
         {
@@ -28,7 +29,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "League\\OAuth2\\Client\\Test\\": "test/src/"
+            "IAmBod\\OAuth2\\Client\\Test\\": "test/src/"
         }
     }
 }
