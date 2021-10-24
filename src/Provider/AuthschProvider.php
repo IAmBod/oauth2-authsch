@@ -12,7 +12,7 @@ use Psr\Http\Message\ResponseInterface;
 
 class AuthschProvider extends AbstractProvider
 {
-    private $scopes;
+    protected $scopes;
 
     public function __construct(array $options = [], array $collaborators = [])
     {
