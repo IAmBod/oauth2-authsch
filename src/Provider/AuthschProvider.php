@@ -12,6 +12,15 @@ use Psr\Http\Message\ResponseInterface;
 
 class AuthschProvider extends AbstractProvider
 {
+    private $scopes;
+
+    public function __construct(array $options = [], array $collaborators = [])
+    {
+        parent::__construct($options, $collaborators);
+
+        $this->scopes = $options['scopes'] ?? [];
+    }
+
     public function getBaseAuthorizationUrl(): string
     {
         return 'https://auth.sch.bme.hu/site/login';
@@ -29,13 +38,7 @@ class AuthschProvider extends AbstractProvider
 
     protected function getDefaultScopes(): array
     {
-        return [
-            'basic',
-            'displayName',
-            'sn',
-            'givenName',
-            'mail'
-        ];
+        return $this->scopes;
     }
 
     protected function getScopeSeparator(): string
