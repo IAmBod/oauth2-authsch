@@ -1,0 +1,34 @@
+{
+    "name": "iambod/oauth2-authsch",
+    "description": "A short description of what your package does",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Károly Bödei",
+            "email": "boodeikaroly@gmail.com"
+        }
+    ],
+    "keywords": [
+        "oauth",
+        "oauth2",
+        "client",
+        "authorization",
+        "authentication",
+        "authsch"
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.2.5",
+        "league/oauth2-client": "^2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "IAmBod\\OAuth2\\Client\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "League\\OAuth2\\Client\\Test\\": "test/src/"
+        }
+    }
+}
