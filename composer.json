@@ -1,6 +1,6 @@
 {
     "name": "iambod/oauth2-authsch",
-    "description": "Integration with iambod/oauth2-client to provide services",
+    "description": "Integration with league/oauth2-client to provide services",
     "license": "MIT",
     "authors": [
         {
